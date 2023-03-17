@@ -67,7 +67,7 @@ public class AuthManager {
         }
     }
     
-    //logout 
+    //logout
     public func logOut(completion: (Bool) -> Void) {
         do {
             try Auth.auth().signOut()
@@ -80,6 +80,6 @@ public class AuthManager {
             return
         }
     }
-
+    
 }
 
