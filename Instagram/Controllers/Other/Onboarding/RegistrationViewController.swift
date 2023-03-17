@@ -76,8 +76,8 @@ class RegistrationViewController: UIViewController {
         btn.setTitleColor(.white, for: .normal)
         return btn
     }()
-
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addSubView()
@@ -96,7 +96,7 @@ class RegistrationViewController: UIViewController {
         emailField.frame = CGRect(x: 20, y: usernameField.bottom+10, width: view.width-40, height: 52)
         passwordField.frame = CGRect(x: 20, y: emailField.bottom+10, width: view.width-40, height: 52)
         registerButton.frame = CGRect(x: 20, y: passwordField.bottom+10, width: view.width-40, height: 52)
-
+        
     }
     
     private func addSubView() {
@@ -112,8 +112,8 @@ class RegistrationViewController: UIViewController {
         passwordField.resignFirstResponder()
         
         guard let email = emailField.text, !email.isEmpty,
-        let username = usernameField.text, !username.isEmpty,
-        let password = passwordField.text, !password.isEmpty, password.count >= 8 else {
+              let username = usernameField.text, !username.isEmpty,
+              let password = passwordField.text, !password.isEmpty, password.count >= 8 else {
             return
         }
         
@@ -125,13 +125,11 @@ class RegistrationViewController: UIViewController {
                 }
                 else {
                     //failed
-
+                    
                 }
             }
         }
     }
-
-
 }
 
 extension RegistrationViewController: UITextFieldDelegate {
