@@ -32,6 +32,7 @@
 		5B154C0E29C4ACA500B1ADF7 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B154C0D29C4ACA500B1ADF7 /* DatabaseManager.swift */; };
 		5B154C1029C4ACB000B1ADF7 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B154C0F29C4ACB000B1ADF7 /* StorageManager.swift */; };
 		5B154C1229C4B9B900B1ADF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B154C1129C4B9B900B1ADF7 /* GoogleService-Info.plist */; };
+		5B28FD8529D46B5A006D07D5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B28FD8429D46B5A006D07D5 /* Models.swift */; };
 		5B34BDDE29CC8F51003AEAF1 /* IGFeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B34BDDD29CC8F51003AEAF1 /* IGFeedPostTableViewCell.swift */; };
 		5B34BDE129CC90DB003AEAF1 /* IGFeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B34BDE029CC90DB003AEAF1 /* IGFeedPostHeaderTableViewCell.swift */; };
 		5B34BDE329CC90F5003AEAF1 /* IGFeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B34BDE229CC90F5003AEAF1 /* IGFeedPostActionsTableViewCell.swift */; };
@@ -73,6 +74,7 @@
 		5B154C0D29C4ACA500B1ADF7 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		5B154C0F29C4ACB000B1ADF7 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		5B154C1129C4B9B900B1ADF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B28FD8429D46B5A006D07D5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		5B34BDDD29CC8F51003AEAF1 /* IGFeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostTableViewCell.swift; sourceTree = "<group>"; };
 		5B34BDE029CC90DB003AEAF1 /* IGFeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		5B34BDE229CC90F5003AEAF1 /* IGFeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		5B154BE329C4A2F000B1ADF7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5B28FD8429D46B5A006D07D5 /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				5B34BDE129CC90DB003AEAF1 /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				5B154BF529C4A48200B1ADF7 /* RegistrationViewController.swift in Sources */,
 				5B154C0329C4A56900B1ADF7 /* PostEditorViewController.swift in Sources */,
+				5B28FD8529D46B5A006D07D5 /* Models.swift in Sources */,
 				5B9E833929CDF30E005EC523 /* FormTableViewCell.swift in Sources */,
 				5B154BF729C4A49F00B1ADF7 /* PostViewController.swift in Sources */,
 				5B9E834029CDFF66005EC523 /* ProfileTabsCollectionReusableView.swift in Sources */,
