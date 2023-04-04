@@ -41,6 +41,7 @@
 		5B9E833C29CDFEBA005EC523 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E833B29CDFEBA005EC523 /* PhotoCollectionViewCell.swift */; };
 		5B9E833E29CDFF21005EC523 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E833D29CDFF21005EC523 /* ProfileInfoHeaderCollectionReusableView.swift */; };
 		5B9E834029CDFF66005EC523 /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E833F29CDFF66005EC523 /* ProfileTabsCollectionReusableView.swift */; };
+		5BD41D0B29DC67D500F9D6E4 /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD41D0A29DC67D500F9D6E4 /* UserFollowTableViewCell.swift */; };
 		B1B2D63CBD047D47AC389923 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB7F15F0A7740741A907AFC /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,7 @@
 		5B9E833B29CDFEBA005EC523 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		5B9E833D29CDFF21005EC523 /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		5B9E833F29CDFF66005EC523 /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
+		5BD41D0A29DC67D500F9D6E4 /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
 		9EB7F15F0A7740741A907AFC /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -230,6 +232,7 @@
 				5B34BDDF29CC90B2003AEAF1 /* Home Feed */,
 				5B9E833829CDF30E005EC523 /* FormTableViewCell.swift */,
 				5B9E833B29CDFEBA005EC523 /* PhotoCollectionViewCell.swift */,
+				5BD41D0A29DC67D500F9D6E4 /* UserFollowTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				5B34BDE129CC90DB003AEAF1 /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				5B154BF529C4A48200B1ADF7 /* RegistrationViewController.swift in Sources */,
 				5B154C0329C4A56900B1ADF7 /* PostEditorViewController.swift in Sources */,
+				5BD41D0B29DC67D500F9D6E4 /* UserFollowTableViewCell.swift in Sources */,
 				5B28FD8529D46B5A006D07D5 /* Models.swift in Sources */,
 				5B9E833929CDF30E005EC523 /* FormTableViewCell.swift in Sources */,
 				5B154BF729C4A49F00B1ADF7 /* PostViewController.swift in Sources */,
