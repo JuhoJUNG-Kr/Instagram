@@ -42,7 +42,7 @@ class HomeViewController: UIViewController {
     }
     
     private func createMockModels() {
-        let user = User(username: "Juho",
+        let user = User(username: "@Juho_Jung",
                         bio: "",
                         name: (first: "", last: ""),
                         profilePhoto: URL(string: "https://www.google.com")!,
@@ -158,6 +158,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             switch model.hearder.renderType {
             case .header(let user):
                 let cell = tableView.dequeueReusableCell(withIdentifier: IGFeedPostHeaderTableViewCell.identifier, for: indexPath) as! IGFeedPostHeaderTableViewCell
+                cell.configure(with: user)
+                cell.delegate = self
                 return cell
             case .comments, .action, .primartContent: return UITableViewCell()
             }
@@ -166,6 +168,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             switch model.post.renderType {
             case .primartContent(let post):
                 let cell = tableView.dequeueReusableCell(withIdentifier: IGFeedPostTableViewCell.identifier, for: indexPath) as! IGFeedPostTableViewCell
+                cell.configure(with: post)
                 return cell
             case .comments, .action, .header: return UITableViewCell()
             }
@@ -174,6 +177,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             switch model.action.renderType {
             case .action(let provider):
                 let cell = tableView.dequeueReusableCell(withIdentifier: IGFeedPostActionsTableViewCell.identifier, for: indexPath) as! IGFeedPostActionsTableViewCell
+                cell.delegate = self
                 return cell
             case .comments, .header, .primartContent: return UITableViewCell()
             }
@@ -198,7 +202,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let subSection = indexPath.section % 4
         if subSection == 0 {
             //header
-            return 70
+            return 50
         }
         else if subSection == 1 {
             //post
@@ -206,7 +210,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
         else if subSection == 2 {
             //actions
-            return 60
+            return 50
         }
         else if subSection == 3 {
             //comment row
@@ -223,4 +227,37 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let subSection = section % 4
         return subSection == 3 ? 70 : 0
     }
+}
+
+extension HomeViewController: IGFeedPostHeaderTableViewCellDelegate {
+    func didTapMoreButton() {
+        let actionSheet = UIAlertController(title: "Post Option", message: nil, preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Report Post", style: .destructive, handler: { [weak self] _ in
+            self?.reportPost()
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+
+        present(actionSheet, animated: true)
+    }
+    
+    func reportPost() {
+        
+    }
+    
+}
+
+extension HomeViewController: IGFeedPostActionsTableViewCellDelegate {
+    func didTapLikeButton() {
+        print("Like")
+    }
+    
+    func didTapCommentButton() {
+        print("Comment")
+    }
+    
+    func didTapSendButton() {
+        print("Send")
+    }
+    
+    
 }
